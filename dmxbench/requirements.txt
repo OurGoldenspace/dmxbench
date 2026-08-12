@@ -1,0 +1,7 @@
+# Pinned loosely for week 1. `pip install -e .` reads pyproject.toml instead;
+# this file exists for anyone who prefers a plain requirements install.
+numpy>=1.24
+scipy>=1.10
+sounddevice>=0.4.6
+librosa>=0.10
+matplotlib>=3.7
