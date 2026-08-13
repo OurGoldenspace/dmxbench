@@ -18,6 +18,11 @@ from .timing import (
     summarize,
 )
 
+from .artnet import (ArtNetSender, dmx_max_refresh_hz, dmx_wire_time_us,
+                     parse_artdmx)
+from .onset import (DETECTORS, AdaptivePeakPicker, IncrementalOnsetDetector,
+                    LibrosaOnsetDetector)
+
 _AUDIO_NAMES = {
     "capture",
     "list_devices",
@@ -59,4 +64,12 @@ __all__ = [
     "save_json",
     "save_csv",
     "markdown_table",
+    "ArtNetSender",
+    "parse_artdmx",
+    "dmx_wire_time_us",
+    "dmx_max_refresh_hz",
+    "LibrosaOnsetDetector",
+    "IncrementalOnsetDetector",
+    "AdaptivePeakPicker",
+    "DETECTORS",
 ]
